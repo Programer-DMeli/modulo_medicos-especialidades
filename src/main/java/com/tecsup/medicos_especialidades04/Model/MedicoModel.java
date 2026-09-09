@@ -44,9 +44,6 @@ public class MedicoModel {
     @Column(name = "fecha_ingreso", nullable = false)
     private LocalDate fechaIngreso;
 
-    @Column(name = "subespecialidad", length = 100)
-    private String subespecialidad;
-
     @Column(name = "estado", nullable = false)
     private Boolean estado = true; // true: ACTIVO, false: INACTIVO
 
@@ -78,7 +75,6 @@ public class MedicoModel {
         this.telefono = telefono;
         this.correo = correo;
         this.fechaIngreso = fechaIngreso;
-        this.subespecialidad = subespecialidad;
         this.estado = estado;
         this.especialidad = especialidad;
     }
@@ -180,14 +176,6 @@ public class MedicoModel {
     }
     public void setFechaIngreso(LocalDate fechaIngreso) {
         this.fechaIngreso = fechaIngreso;
-    }
-
-    public String getSubespecialidad() {
-        return subespecialidad;
-    }
-
-    public void setSubespecialidad(String subespecialidad) {
-        this.subespecialidad = subespecialidad;
     }
 
     public Boolean getEstado() {

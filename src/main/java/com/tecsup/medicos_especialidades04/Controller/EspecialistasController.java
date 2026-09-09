@@ -1,6 +1,7 @@
 package com.tecsup.medicos_especialidades04.Controller;
 
 import com.tecsup.medicos_especialidades04.Model.Especialidad;
+import com.tecsup.medicos_especialidades04.Repository.EspecialidadRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

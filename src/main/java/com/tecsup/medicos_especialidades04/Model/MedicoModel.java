@@ -53,7 +53,7 @@ public class MedicoModel {
     // Relación con Especialidad
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_especialidad", nullable = false)
-    private EspecialistasModel especialidad;
+    private EspecialidadesModel especialidad;
 
     // ==========================================
     // CONSTRUCTORES
@@ -65,7 +65,7 @@ public class MedicoModel {
     public MedicoModel(Long idMedico, String codigoMedico, String tipoDocumento, String numeroDocumento,
                        String nombres, String apellidoPaterno, String apellidoMaterno, String cmp,
                        String rne, String telefono, String correo, LocalDate fechaIngreso,
-                       String subespecialidad, Boolean estado, EspecialistasModel especialidad) {
+                       String subespecialidad, Boolean estado, EspecialidadesModel especialidad) {
         this.idMedico = idMedico;
         this.codigoMedico = codigoMedico;
         this.tipoDocumento = tipoDocumento;
@@ -197,10 +197,10 @@ public class MedicoModel {
     public void setEstado(Boolean estado) {
         this.estado = estado;
     }
-    public EspecialistasModel getEspecialidad() {
+    public EspecialidadesModel getEspecialidad() {
         return especialidad;
     }
-    public void setEspecialidad(EspecialistasModel especialidad) {
+    public void setEspecialidad(EspecialidadesModel especialidad) {
         this.especialidad = especialidad;
     }
 }

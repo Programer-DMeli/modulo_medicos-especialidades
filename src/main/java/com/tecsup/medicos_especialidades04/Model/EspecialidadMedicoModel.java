@@ -1,6 +1,6 @@
 package com.tecsup.medicos_especialidades04.Model;
 
-public class Especialidad {
+public class EspecialidadMedicoModel {
 
     private Long id;
     private String codigo;
@@ -9,11 +9,11 @@ public class Especialidad {
     private int duracionConsulta;
     private boolean activa;
 
-    public Especialidad() {
+    public EspecialidadMedicoModel() {
     }
 
-    public Especialidad(Long id, String codigo, String nombre, String descripcion,
-                        int duracionConsulta, boolean activa) {
+    public EspecialidadMedicoModel(Long id, String codigo, String nombre, String descripcion,
+                                   int duracionConsulta, boolean activa) {
         this.id = id;
         this.codigo = codigo;
         this.nombre = nombre;

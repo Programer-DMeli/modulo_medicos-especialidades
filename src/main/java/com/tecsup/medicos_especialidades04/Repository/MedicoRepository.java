@@ -1,4 +1,4 @@
 package com.tecsup.medicos_especialidades04.Repository;
 
-public interface MedicoInterface {
+public interface MedicoRepository {
 }

@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "especialidad")
-public class EspecialistasModel {
+public class EspecialidadesModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,10 +19,10 @@ public class EspecialistasModel {
     @Column(name = "nombre", nullable = false, unique = true, length = 100)
     private String nombre;
 
-    public EspecialistasModel() {
+    public EspecialidadesModel() {
     }
 
-    public EspecialistasModel(String nombre) {
+    public EspecialidadesModel(String nombre) {
         this.nombre = nombre;
     }
 
